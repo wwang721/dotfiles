@@ -1,5 +1,7 @@
 [user]
 	name = Wei Wang
 	email = ww000721@gmail.com
+[init]
+	defaultbranch = main
 [core]
 	editor = nvim
