@@ -79,6 +79,8 @@ plugins=(
     fzf-tab
 )
 
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
