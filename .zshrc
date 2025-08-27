@@ -81,6 +81,8 @@ plugins=(
 
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
+DISABLE_AUTO_UPDATE=true
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
