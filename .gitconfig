@@ -1,6 +1,7 @@
 [user]
 	name = Wei Wang
 	email = ww000721@gmail.com
+    signingkey = /Users/wwang/.ssh/id_rsa.pub
 [init]
 	defaultbranch = main
 [core]
