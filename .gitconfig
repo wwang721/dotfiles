@@ -17,4 +17,6 @@
 	required = true
 [gpg]
 	format = ssh
+[commit]
+	gpgsign = true
 
