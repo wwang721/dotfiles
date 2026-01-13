@@ -131,6 +131,30 @@ zstyle ':fzf-tab:complete:cd:*' fzf-flags --border --info=inline --height 60%
 # Options to fzf command
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --border --info=inline"
 
+
+#========================================================================
+# Use fd in fzf
+#------------------------------------------------------------------------
+# Use fd for fzf's common UI: fzf or $(fzf)
+# export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
+# Use fd for fzf's CTRL-T: list files + directories
+export FZF_CTRL_T_COMMAND='fd --hidden --follow --exclude .git'
+
+# Use fd for fzf's ALT-C: list directories only
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
+
+# Use fd for fzf **<TAB> completion (paths/files)
+_fzf_compgen_path() {
+  fd --hidden --follow --exclude .git . "$1"
+}
+# Use fd for fzf **<TAB> completion (directories)
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude .git . "$1"
+}
+#========================================================================
+
+
 # Advanced customization of fzf options via _fzf_comprun function
 # - The first argument to the function is the name of the command.
 # - You should make sure to pass the rest of the arguments ($@) to fzf.
