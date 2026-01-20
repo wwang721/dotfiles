@@ -194,3 +194,5 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="/opt/homebrew/opt/ruby@3.2/bin:$PATH"
 
+# Disable Homebrew auto-update
+export HOMEBREW_NO_AUTO_UPDATE=1
