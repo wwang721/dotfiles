@@ -136,7 +136,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --border --info=inline"
 # Use fd in fzf
 #------------------------------------------------------------------------
 # Use fd for fzf's common UI: fzf or $(fzf)
-# export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_DEFAULT_COMMAND='fd --hidden --follow --exclude .git'
 
 # Use fd for fzf's CTRL-T: list files + directories
 export FZF_CTRL_T_COMMAND='fd --hidden --follow --exclude .git'
