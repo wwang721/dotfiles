@@ -12,7 +12,6 @@ Dropbox
 .conda/
 .local/
 .bundle/
-.codex/
 .dropbox/
 .gem/
 .gnupg/
@@ -22,4 +21,3 @@ Dropbox
 .nvm/
 .vscode/
 .zsh_sessions/
-
