@@ -116,7 +116,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ls='lsd'
 alias bat='bat --paging=never'
-alias view='nvim -R'
+alias view='nvim -M'
 
 
 # custom fzf flags; fzf-tab does not follow FZF_DEFAULT_OPTS by default

@@ -31,7 +31,7 @@ if [[ $- == *i* ]] && [[ -t 0 ]] && command -v zsh >/dev/null 2>&1 && [ -z "$ZSH
 fi
 
 alias cmy='conda activate myenv'
-alias view='nvim -R'
+alias view='nvim -M'
 alias bat='bat --paging=never'
 
 # fzf
