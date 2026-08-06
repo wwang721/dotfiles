@@ -26,7 +26,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Only switch to zsh if this is an interactive shell
-if [[ $- == *i* ]] && command -v zsh >/dev/null 2>&1 && [ -z "$ZSH_VERSION" ]; then
+if [[ $- == *i* ]] && [[ -t 0 ]] && command -v zsh >/dev/null 2>&1 && [ -z "$ZSH_VERSION" ]; then
   exec zsh
 fi
 
